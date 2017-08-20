@@ -6,13 +6,12 @@
 </div>
 
 <div class="container" style="background: #ffffff">
-  @include('partials._messages')
 	<h2>Event Feedback</h2>
 	<hr>
   <div class="field_required">
     {{ Html::ul($errors->all(), array('class'=>'errors'))}}
   </div>
-  {{ Form::open(['route'=>'pages.postFeedback'])}}
+  {{ Form::open(array('url' => 'feedback'))}}
 
   <div class="form-group">
    <label>1. Which Event did you attend? <label class="field_required">*</label></label>
