@@ -11,19 +11,19 @@
 <div> Ratings:
 	<br>
 	<br>
-	Content: {{ $one }}/5;
+	<strong>Content:</strong> {{ $one }}/5;
 	<br>
-	Presentation: {{ $two }}/5;
+	<strong>Presentation:</strong> {{ $two }}/5;
 	<br>
-	Speaker: {{ $three }}/5;
+	<strong>Speaker:</strong> {{ $three }}/5;
 	<br>
-	Support Staff: {{ $four }}/5;
+	<strong>Support Staff:</strong> {{ $four }}/5;
 	<br>
-	Location: {{ $five }}/5;
+	<strong>Location:</strong> {{ $five }}/5;
 	<br>
 </div>
 
-<div>How well organized was the event? {{ $organized }}/9</div>
+<strong><div>How well organized was the event? {{ $organized }}/9</div></strong>
 <div>Overall Satisfaction {{ $overall }}/9</div>
 <div>Suggestions: {{ $suggestions }}</div>
 </body>

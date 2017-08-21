@@ -2,22 +2,24 @@
 
 @section('content')
 <div class="jumbotron text-center">
-	<h1>Feedback are always welcome!!!</h1>
+  <h1>Feedback are always welcome!!!</h1>
 </div>
 
 <div class="container" style="background: #ffffff">
-	<h2>Event Feedback</h2>
-	<hr>
+  @include('partials._messages')
+  <h2>Event Feedback</h2>
+  <hr>
   <div class="field_required">
     {{ Html::ul($errors->all(), array('class'=>'errors'))}}
   </div>
-  {{ Form::open(array('url' => 'feedback'))}}
+  {!! Form::open(['url'=>'feedback']) !!}
 
   <div class="form-group">
    <label>1. Which Event did you attend? <label class="field_required">*</label></label>
    <select class="form-control" name="event_name">
-    <option value="hackme">Hack Me</option>
-    <option value="linux">Linux</option>
+    @foreach($events as $event)
+      <option value="{{$event->name}}">{{ $event->name }}</option>
+    @endforeach
   </select>
 </div>
 
@@ -214,7 +216,7 @@
 </tbody>
 </table>
 </div>
-</div>	
+</div>  
 
 <div class="form-group">
  <label>4. How organized was the event?<label class="field_required">*</label></label>
@@ -253,7 +255,7 @@
 
   </div>
 </div>
-</div>	
+</div>  
 
 <div class="form-group">
  <label>5. Overall, how would you rate the event ?<label class="field_required">*</label></label>

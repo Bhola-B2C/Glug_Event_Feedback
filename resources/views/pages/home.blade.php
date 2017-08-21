@@ -4,14 +4,8 @@
 <section class="header section-padding">
 	<div class="background">&nbsp;</div>
 	<div class="container">
-		<div class="header-text">
-		<br />
-		<br />
-			<h1>GLUG Storehouse</h1>
-			<p>
-				Download Presentation
-				<br /> Feedbacks are always welcome
-			</p>
+		<div style="margin-top: 180px">
+
 		</div>
 	</div>
 </section>
@@ -24,21 +18,30 @@
 					<h1 style="color:#f65026; font-size: 40px">
 						<span style="color:grey">Upcoming</span> Events
 					</h1>
+					<div class="table-responsive">
 						<table class="table">
-						<thead>
-							<tr>
-								<th>#</th>
-								<th>Date</th>
-								<th>Event's Name</th>
-								<th>Description</th>
-								<th>Venue</th>
-							</tr>
-						</thead>
-						<tbody>
-							
-						</tbody>
-					</table>
-					</h1>
+							<thead>
+								<tr>
+									<th class="text-center">#</th>
+									<th class="text-center">Date</th>
+									<th class="text-center">Event's Name</th>
+									<th class="text-center">Description</th>
+									<th class="text-center">Venue</th>
+								</tr>
+							</thead>
+							<tbody>
+								@foreach($events as $event)
+								<tr>
+									<td>{{ $event->id }}</td>
+									<td>{{ $event->date }}</td>
+									<td>{{ $event->name }}</td>
+									<td>{{ $event->description }}</td>
+									<td>{{ $event->venue }}</td>
+								</tr>
+								@endforeach
+							</tbody>
+						</table>
+					</div>
 				</div>
 				
 			</div>

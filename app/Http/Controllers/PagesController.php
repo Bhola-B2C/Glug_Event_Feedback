@@ -8,12 +8,14 @@ use Validator;
 use Redirect;
 use Mail;
 use Session;
+use App\Event;
 
 class PagesController extends Controller
 {
     public function getHome()
     {
-    	return view('pages.home');
+    	$events=Event::all();
+    	return view('pages.home')->withEvents($events);
     }
     public function getDownload()
     {
@@ -21,7 +23,8 @@ class PagesController extends Controller
     }
     public function getFeedback()
     {
-    	return view('pages.feedback');
+    	$events=Event::all();
+    	return view('pages.feedback')->withEvents($events);
     }
     public function postFeedback()
     {

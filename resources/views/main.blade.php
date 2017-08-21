@@ -3,10 +3,11 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title> Glug Storehouse</title>
+	<title> GNU Linux User's Group</title>
 	<link rel="stylesheet" href="/css/bootstrap.min.css">
 	<link rel="stylesheet" href="{{ asset('/css/style.css')}}">
 	<link rel="stylesheet" href="{{ asset('/Font-Awesome/css/font-awesome.min.css')}}">
+	<link rel="shortcut icon" href="images/logo.png">
 </head>
 
 <body>
