@@ -370,7 +370,7 @@ p{
 }
 
 .social-icons ul li a {
-  color:#fff;
+  color: #000;
   background-color: #d9d9d9;
   height: 36px;
   width: 36px;
@@ -381,6 +381,7 @@ p{
 }
 
 .social-icons ul li a:hover {
+  color: #fff;
   opacity: 1;
   -webkit-transform: scale(1.2);
   transform: scale(1.2);

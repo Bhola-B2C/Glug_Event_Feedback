@@ -31,7 +31,7 @@
     <div class="container">
       <div class="row btn-h1-spacing">
         <div class="col-md-6">
-          <p>© 2016 GNU/Linux Users' Group <a href="http://nitdgplug.org" style="color: #fff">(Our Website)</a></p>
+          <p style="font-size:100%">© 2016 GNU/Linux Users' Group <a href="http://nitdgplug.org" style="color: #fff">(Our Website)</a></p>
         </div>
         <div class="col-md-6">
           <div class="navbar-header navbar-right" style="margin-top: -5px">
