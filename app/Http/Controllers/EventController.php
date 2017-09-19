@@ -116,4 +116,14 @@ class EventController extends Controller
         Session::flash('success','The event was successfully deleted');
         return redirect()->route('events.index');
     }
+
+    public function getAdminDashboard()
+    {
+        return view('admin_dashboard');
+    }
+
+    public function getFeedbackDashboard()
+    {
+        return view('feedback_dashboard');
+    }
 }

@@ -4,10 +4,10 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Event extends Model
+class Feedback extends Model
 {
     public function event()
     {
-    	return $this->hasMany('App\Feedback');
+    	return $this->belongsTo('App\Event');
     }
 }

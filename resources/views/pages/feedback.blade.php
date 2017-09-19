@@ -6,7 +6,6 @@
 </div>
 
 <div class="container" style="background: #ffffff">
-  @include('partials._messages')
   <h2>Event Feedback</h2>
   <hr>
   <div class="field_required">
@@ -18,7 +17,7 @@
    <label>1. Which Event did you attend? <label class="field_required">*</label></label>
    <select class="form-control" name="event_name">
     @foreach($events as $event)
-      <option value="{{$event->name}}">{{ $event->name }}</option>
+      <option value="{{$event->id}}">{{ $event->name }}</option>
     @endforeach
   </select>
 </div>
@@ -291,13 +290,26 @@
     <label class="btn btn-primary" style="width: 10%">
       <input type="radio" name="overall" id="option3" value="9"> 9
     </label>
-
   </div>
-</div>
+ </div>
 </div>
 
 <div class="form-group">
- <label for="suggestion">6. Any suggestion(s)</label>
+  <label for="yes/no">6. Do you want such event to be conducted ?<label class="field_required">*</label></label>
+  <div class="Demo-boot">
+    <div class="btn-group" data-toggle="buttons" style="width: 100%">
+      <label class="btn btn-primary" style="width: 10%">
+        <input type="radio" name="yes_no" id="option1" value="1"> YES
+      </label>
+      <label class="btn btn-primary" style="width: 10%">
+        <input type="radio" name="yes_no" id="option2" value="0"> NO
+      </label>
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+ <label for="suggestion">7. Any suggestion(s)</label>
  <textarea id="suggestion" class="form-control" rows="10" name="suggestions" placeholder="Give your suggestions here"></textarea>
 </div>
 

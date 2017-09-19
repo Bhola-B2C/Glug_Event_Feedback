@@ -15,8 +15,8 @@
 
 	<header>
 		@include('partials._navbar')
-		@yield('content')
 	</header>
+	@yield('content')
 	@include('partials._footer')
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>

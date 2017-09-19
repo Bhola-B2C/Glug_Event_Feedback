@@ -48,4 +48,5 @@
 		</div>
 	</section>
 </div>
+@include('partials._messages')
 @stop

@@ -14,6 +14,8 @@
 Route::get('/', 'PagesController@getHome')->name('pages.home');
 Route::get('/feedback', 'PagesController@getFeedback')->name('pages.getFeedback');
 Route::post('/feedback','PagesController@postFeedback')->name('events.postFeedback');
+Route::get('/admindashboard','EventController@getAdminDashboard')->name('admin.dashboard');
+Route::get('/feedbackdashboard','EventController@getFeedbackDashboard')->name('feedback.dashboard');
 /**/
 Route::resource('events','EventController');
 

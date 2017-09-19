@@ -310,7 +310,7 @@ body{
 	position: fixed;
 	width: 100%;
 	padding: 0 20px;
-	z-index: 100;
+	z-index: 0;
 }
 p{
 	font-size: 20px;
@@ -409,4 +409,23 @@ p{
   margin-top: 150px;
 }h1{
   font-family: "Times New Roman", Times, serif;
+}
+
+.select{
+  border: groove;
+  height: 320px;
+}
+
+#choice .select:hover{
+  /*background-color: red;*/
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.graph-logo{
+
+}
+
+.event_develop-logo{
 }
