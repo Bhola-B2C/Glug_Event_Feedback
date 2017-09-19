@@ -1,8 +1,11 @@
 @if (Session::has('success'))
-	<!-- <div class="alert alert-success btn-h1-spacing" role="alert">
+	<div class="alert alert-success btn-h1-spacing" role="alert">
 		<strong>Success:</strong> {{ Session::get('success') }}
-	</div> -->
+	</div> 
+@endif
+
+@if (Session::has('success_f'))
 	<script type="text/javascript">
-		alert("The feedback has been successfully submitted");
+		alert("{{ Session::get('success_f') }}");
 	</script>
 @endif

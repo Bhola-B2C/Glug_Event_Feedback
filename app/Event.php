@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Event extends Model
 {
-    public function event()
+    public function feedback()
     {
     	return $this->hasMany('App\Feedback');
     }

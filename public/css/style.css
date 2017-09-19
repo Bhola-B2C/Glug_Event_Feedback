@@ -310,7 +310,7 @@ body{
 	position: fixed;
 	width: 100%;
 	padding: 0 20px;
-	z-index: 0;
+	z-index: 100;
 }
 p{
 	font-size: 20px;
@@ -428,4 +428,11 @@ p{
 }
 
 .event_develop-logo{
+}
+.jumbotron>h1{
+  margin-top: 30px;
+}
+#ch .sel:hover{
+  background-color: #ccc;
+  cursor: pointer;
 }

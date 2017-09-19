@@ -82,7 +82,7 @@ class PagesController extends Controller
 		{
 			$message->to('bholajrs@gmail.com','Bhola')->subject('Someone gave feedback to GLUG Event')->from('feedback@glug.com');
 		});*/
-		Session::flash('success','The feedback has been submitted!!');
+		Session::flash('success_f','The feedback has been submitted!!');
 		return Redirect::to('/');
     }
 }
