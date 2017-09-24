@@ -4,6 +4,9 @@
 	<h1>Overall Feedback</h1>
 </div>
 <div class="container">
+	<div id="overall"></div>
+	@areachart('Overall', 'overall')
+	<hr>
 	<div class="table-responsive">
 		<table class="table">
 			<thead>
