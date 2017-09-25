@@ -40,10 +40,11 @@
             @else
               <ul class="nav navbar-nav navbar-right">
                 <li class="dropup">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hi {{ Auth::user()->name }} <span class="caret"></span></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: #ffffff">Hi {{ Auth::user()->name }} <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="{{ route('events.create') }}">Create New Event</a></li>
-                    <li><a href="{{ route('events.index') }}">View Events</a></li>
+                    <li><a href="{{ route('admin.dashboard') }}">Admin Dashboard</a></li>
+                    <li><a href="{{ route('feedback.dashboard') }}">See Feedback</a></li>
+                    <li><a href="{{ route('events.index') }}">Develop Events</a></li>
                     <li role="separator" class="divider"></li>
                     <li>
                       <a href="{{ route('logout') }}"

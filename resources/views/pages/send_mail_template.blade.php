@@ -25,6 +25,7 @@
 
 <strong><div>How well organized was the event? {{ $organized }}/9</div></strong>
 <div>Overall Satisfaction {{ $overall }}/9</div>
+<div>Want such event to be conducted ?? {{$yes_no}}</div>
 <div>Suggestions: {{ $suggestions }}</div>
 </body>
 </html>

@@ -9,7 +9,7 @@
 			<a href="/feedbackdashboard">
 				<div class="select">
 					<div class="graph-logo">	
-						<img src="/img/chart.png" alt="" height="100">
+						
 					</div>
 				</div>
 			</a>
@@ -18,7 +18,7 @@
 			<a href="/events">
 				<div class="select">
 					<div class="event_develop-logo">
-						<img src="" alt="">
+						
 					</div>
 				</div>
 			</a>

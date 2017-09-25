@@ -75,6 +75,7 @@ class PagesController extends Controller
 			'five' => $data['five'],
 			'organized' => $data['organized'],
 			'overall' => $data['overall'],
+			'yes_no' => $data['yes_no'],
 			'suggestions' => $data['suggestions']
 		);
 	
