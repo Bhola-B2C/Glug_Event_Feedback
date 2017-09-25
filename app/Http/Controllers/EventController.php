@@ -193,7 +193,7 @@ class EventController extends Controller
                 ->addRow(['Overall',Feedback::where('event_id',$id)->avg('overall')]);
         Lava::BarChart('Overall', $overall, ['title'=>'Overall Rating of the Event']);
         /*Suggestions */
-        $suggestions=Feedback::where('event_id',$id);
-        return view('feedback_result')->withEvent($event)->withSuggestions($suggestions);
+        $feedbacks=Feedback::where('event_id',$id)->get();
+        return view('feedback_result')->withEvent($event)->withFeedbacks($feedbacks);
     }
 }

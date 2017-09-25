@@ -14,11 +14,20 @@
 	<hr>
 	<div id="overall" style="height: 200px;"></div>
 	<hr>
-	<div>
-		<h2>Suggestions: </h2>
-		@foreach($suggestions as $suggestion)
-			<li>{{ $suggestion->suggestions }}</li>
-		@endforeach
+	<div class="panel-group">
+		<div class="panel panel-primary">
+			<div class="panel-heading"><strong>Suggestions: </strong></div>
+			<div class="panel-body">
+				<ol>
+					@foreach($feedbacks as $feedback)
+						@if($feedback->suggestions!=NULL)
+							<li>{{ $feedback->suggestions }}</li>
+							<hr>
+						@endif
+					@endforeach
+				</ol>
+			</div>
+		</div>
 	</div>
 	@piechart('event_heard', 'event_heard_from')
 	@barchart('Rates', 'satisfactory_rating')
