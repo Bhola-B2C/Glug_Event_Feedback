@@ -16,7 +16,7 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h1 style="color:#f65026; font-size: 40px">
-						<span style="color:grey">Upcoming</span> Events
+						<span style="color:grey">Recent</span> Events
 					</h1>
 					<div class="table-responsive">
 						<table class="table">
