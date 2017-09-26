@@ -150,7 +150,7 @@ class EventController extends Controller
         $publicity = Lava::DataTable();
         $publicity->addStringColumn('reasons')
                  ->addNumberColumn('Percent')
-                 ->addRow(['Posters', Feedback::where([['event_heard_from','posters'],['event_id',$id]])->count()])
+                 ->addRow(['Posters', Feedback::where([['event_heard_from','poster'],['event_id',$id]])->count()])
                  ->addRow(['Class Orientation', Feedback::where([['event_heard_from','class_orientation'],['event_id',$id]])->count()])
                  ->addRow(['Friends', Feedback::where([['event_heard_from','friends'],['event_id',$id]])->count()])
                  ->addRow(['Seniors', Feedback::where([['event_heard_from','seniors'],['event_id',$id]])->count()])
