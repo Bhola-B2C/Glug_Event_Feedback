@@ -5,20 +5,20 @@
 </div>
 <div class="container">
 	<div class="row" id="choice">
-		<div class="col-md-6 col-xs-6">
+        <div class="col-md-6 col-sm-12">
 			<a href="/feedbackdashboard">
 				<div class="select">
-					<div class="graph-logo">	
-						
+					<div class="graph-logo">
+
 					</div>
 				</div>
 			</a>
 		</div>
-		<div class="col-md-6 col-xs-6">
+        <div class="col-md-6 col-sm-12">
 			<a href="/events">
 				<div class="select">
 					<div class="event_develop-logo">
-						
+
 					</div>
 				</div>
 			</a>

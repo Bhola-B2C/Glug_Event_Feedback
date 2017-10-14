@@ -414,6 +414,7 @@ p{
 .select{
   border: groove;
   height: 320px;
+  margin: 15px;
 }
 
 #choice .select:hover{
@@ -425,12 +426,14 @@ p{
 
 .graph-logo{
   background-image: url(/img/gf.jpg);
+  background-repeat: round;
   background-size: cover;
   height: 100%;
 }
 
 .event_develop-logo{
   background-image: url(/img/dd.png);
+  background-repeat: round;
   background-size: cover;
   height: 100%;
 }
