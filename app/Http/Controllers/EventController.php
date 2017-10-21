@@ -146,6 +146,7 @@ class EventController extends Controller
     public function getFeedbackResult($id)
     {
         $event=Event::where('id','=',$id)->first();
+        $total_feedback=Event::where('id','=',$id)->count();
         /* Event heard from */
         $publicity = Lava::DataTable();
         $publicity->addStringColumn('reasons')
@@ -194,6 +195,6 @@ class EventController extends Controller
         Lava::BarChart('Overall', $overall, ['title'=>'Overall Rating of the Event']);
         /*Suggestions */
         $feedbacks=Feedback::where('event_id',$id)->get();
-        return view('feedback_result')->withEvent($event)->withFeedbacks($feedbacks);
+        return view('feedback_result')->withEvent($event)->withFeedbacks($feedbacks)->withTotal($total_feedback);
     }
 }

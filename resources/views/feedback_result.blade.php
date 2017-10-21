@@ -4,6 +4,8 @@
 	<h1>{{$event->name}}</h1>
 </div>
 <div class="container">
+	<div style="background-color: #ffffff; height: 50px; line-height: 50px;"><strong>&emsp;Total No of Feedback:</strong> {{ $total }}</div>
+	<hr>
 	<div id="event_heard_from" style="height: 400px;"></div>
 	<hr>
 	<div id="satisfactory_rating" style="height: 400px;"></div>
