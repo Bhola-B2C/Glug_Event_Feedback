@@ -146,6 +146,7 @@ class EventController extends Controller
     public function getFeedbackResult($id)
     {
         $event=Event::where('id','=',$id)->first();
+        $total_feedback=Feedback::where('event_id','=',$id)->count();
         /* Event heard from */
         $publicity = Lava::DataTable();
         $publicity->addStringColumn('reasons')
@@ -183,8 +184,8 @@ class EventController extends Controller
         $options->addStringColumn('Event')
         ->addNumberColumn('Yes')
         ->addNumberColumn('No')
-        ->addRow( [$event->name, Feedback::where([['yes_no',1],['event_id',$id]])->count(), Feedback::where([['yes_no',0],['event_id',$id]])->count()] );
-        Lava::ColumnChart('Yes_No', $options, ['title' => 'Want such event to be conducted again ?']);
+        ->addRow( [$event->name, ((Feedback::where([['yes_no',1],['event_id',$id]])->count())/$total_feedback)*100, ((Feedback::where([['yes_no',0],['event_id',$id]])->count())/$total_feedback)*100] );
+        Lava::ColumnChart('Yes_No', $options, ['title' => 'Want such event to be conducted again (in %) ?']);
 
         /* Overall rating */
         $overall  = Lava::DataTable();
