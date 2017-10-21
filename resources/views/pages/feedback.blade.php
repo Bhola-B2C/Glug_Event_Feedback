@@ -123,7 +123,7 @@
 </td>
 </tr>
 
-<tr>
+<!-- <tr>
  <td>3.</td>
  <td>Speaker</td>
  <td>
@@ -151,10 +151,10 @@
    <input type="radio" name="three" id="option3" value="5"> 5
  </label>
 </td>
-</tr>
+</tr> -->
 
 <tr>
- <td>4.</td>
+ <td>3.</td>
  <td>Support Staff</td>
  <td>
   <label class="btn btn-primary">
@@ -184,7 +184,7 @@
 </tr>
 
 <tr>
- <td>5.</td>
+ <td>4.</td>
  <td>Location</td>
  <td>
   <label class="btn btn-primary">

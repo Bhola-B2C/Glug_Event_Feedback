@@ -35,7 +35,7 @@ class PagesController extends Controller
 			'event_heard_from' => 'required',						// => is separator for assosciative array
 			'one' => 'required',		//one=>content
 			'two' => 'required',		//two=>presentation
-			'three' => 'required',		//three=>speaker
+			//'three' => 'required',		//three=>speaker
 			'four' => 'required',		//four=>support_staff
 			'five' => 'required',		//five=>location
 			'organized' => 'required',
@@ -52,7 +52,8 @@ class PagesController extends Controller
 		$feedback->event_heard_from = $request->event_heard_from;
         $feedback->content  = $request->one;
         $feedback->presentation = $request->two;
-        $feedback->speaker = $request->three;
+        $feedback->speaker='0';
+        //$feedback->speaker = $request->three;
         $feedback->support_staff = $request->four;
         $feedback->location = $request->five;
         $feedback->organized = $request->organized;
