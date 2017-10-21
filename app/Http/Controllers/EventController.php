@@ -146,7 +146,7 @@ class EventController extends Controller
     public function getFeedbackResult($id)
     {
         $event=Event::where('id','=',$id)->first();
-        $total_feedback=Event::where('id','=',$id)->count();
+        $total_feedback=Feedback::where('event_id','=',$id)->count();
         /* Event heard from */
         $publicity = Lava::DataTable();
         $publicity->addStringColumn('reasons')
